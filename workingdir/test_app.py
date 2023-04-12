@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def welcome():
-    return "<p>Welcome to this simple web app! Please add /data to the current url to view the interface </p>"
+    return render_template('welcome.html')
 
 def get_db_connection():
     conn = sqlite3.connect('demo.db')

@@ -1,13 +1,14 @@
-{% block title %} {{title}} {% endblock title %}
+{% extends "layout/base.html" %}
+
+{% block title %} Data {% endblock %}
 
 {% block stylesheets %}
 
-<!-- accessing css file  -->
-<link rel="stylesheet" href="/static/css/style.css">
 <style>
     /* can type specific css here */
 </style>
-{% endblock stylesheets %}
+
+{% endblock %}
 
 
 {% block content %}
@@ -34,9 +35,6 @@
 {% endblock %}
 
 {% block javascripts %}
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
 
 <script>
 
@@ -143,4 +141,4 @@ window.onclick = function(event) {
 </script>
 
 
-{% endblock javascripts %}
+{% endblock %}

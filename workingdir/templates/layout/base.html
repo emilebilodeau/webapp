@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title> 
+        My Web App - {% block title %} {% endblock %}    
+    </title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="/static/css/style.css" /> 
+
+    <!-- Specific Page CSS -->
+    {% block stylesheets %}{% endblock %}
+
+</head>
+
+<body>
+
+    {% include 'includes/sidebar.html' %}
+
+    <div id="content">{% block content %}{% endblock %}</div>
+
+    <!-- JS libraries/files -->
+    {% include 'includes/scripts.html' %}
+
+    <!-- Specific Page JS -->
+    {% block javascripts %}{% endblock %}
+</body>
+</html>
